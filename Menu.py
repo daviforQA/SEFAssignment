@@ -2,11 +2,12 @@ def add_books():
     print("Add book")
 
 def delete_book(): 
-
+    print("Delete book")
 def exit_programme():
     return False
 
 def generate_reports():
+    print("Generate reports")
 
 def get_menu_choice():
     while True:
@@ -24,15 +25,19 @@ def get_menu_choice():
             print("Choice must be between 1 and 8.")
 
 def rare_book_menu():
+    print("Rare book menu")
 
 def search_books():
+    print("Search books")
 
 def update_books():
+    print("Update books")
 
 def view_books():
+    print("View books")
     
 MAIN_MENU = {
-    "1": ("Add Books", add_book),
+    "1": ("Add Books", add_books),
     "2": ("View Books", view_books),
     "3": ("Search Books", search_books),
     "4": ("Update Books", update_books),
@@ -47,7 +52,6 @@ def main():
     while running:
         clear_screen()
         print("\n==== Bookstore Managment Systems ====\nMenu:\n")
-        for key, (label, _) in MAIN_MENU:
+        for key, (label, _) in MAIN_MENU.items():
             print(f"{key}. {label}")
-        get_menu_choice
-    main()
+        choice = get_menu_choice()
