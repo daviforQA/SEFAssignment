@@ -1,0 +1,23 @@
+title,author,genre,isbn,publication_year,quantity_in_stock,unit_price,is_rare,env_conditions,additional_info
+To Kill a Mockingbird,Harper Lee,Fiction,978-0-06-112008-4,1960,12,15.99,No,,Pulitzer Prize-winning novel.
+The Great Gatsby,F. Scott Fitzgerald,Classic Fiction,978-0-7432-7356-5,1925,3,25.50,Yes,temp_min=18,temp_max=22,humidity_min=40,humidity_max=50,light=low,"First edition, leather-bound copy."
+1984,George Orwell,Dystopian,978-0-452-28423-4,1949,8,12.99,No,,Classic dystopian novel about totalitarianism.
+Pride and Prejudice,Jane Austen,Romance_Classic,978-0-19-953556-9,1813,2,30.00,Yes,temp_min=16,temp_max=20,humidity_min=35,humidity_max=45,light=minimal,"Early 19th-century edition in excellent condition."
+Moby Dick,Herman Melville,Adventure_Classic,978-0-14-243724-7,1851,4,18.00,Yes,temp_min=17,temp_max=21,humidity_min=40,humidity_max=50,light=low,"Collector's edition with original illustrations."
+The Catcher in the Rye,J.D. Salinger,Fiction,978-0-316-76948-0,1951,10,14.99,No,,Popular coming-of-age novel.
+War and Peace,Leo Tolstoy,Historical Fiction,978-0-679-64037-9,1869,1,50.00,Yes,temp_min=18,temp_max=22,humidity_min=40,humidity_max=45,light=minimal,"Rare hardcover edition."
+The Hobbit,J.R.R. Tolkien,Fantasy,978-0-618-00221-3,1937,6,22.99,No,,Classic fantasy novel.
+Frankenstein,Mary Shelley,Horror_Science_Fiction,978-0-14-143947-1,1818,2,28.50,Yes,temp_min=16,temp_max=20,humidity_min=35,humidity_max=45,light=low,"Early edition with original introduction."
+Brave New World,Aldous Huxley,Dystopian,978-0-06-085052-4,1932,7,16.99,No,,Classic dystopian work.
+The Odyssey,Homer,Epic Poetry,978-0-14-026886-7,-800,1,35.00,Yes,temp_min=18,temp_max=20,humidity_min=35,humidity_max=40,light=minimal,"Translated edition, collector's copy."
+Don Quixote,Miguel de Cervantes,Classic Fiction,978-0-14-243723-0,1605,2,40.00,Yes,temp_min=17,temp_max=21,humidity_min=35,humidity_max=45,light=low,"Antique edition."
+Harry Potter and the Philosopher's Stone,J.K. Rowling,Fantasy,978-0-7475-3269-9,1997,20,12.99,No,,First book in the Harry Potter series.
+The Lord of the Rings The Fellowship of the Ring,J.R.R. Tolkien,Fantasy,978-0-618-00222-0,1954,5,22.99,No,,First volume of the epic trilogy.
+Alices Adventures in Wonderland,Lewis Carroll,Childrens Literature,978-0-14-132107-3,1865,3,18.50,Yes,temp_min=16,temp_max=20,humidity_min=35,humidity_max=45,light=low,"Antique edition with original illustrations."
+The Divine Comedy,Dante Alighieri,Epic Poetry,978-0-14-243722-3,1320,1,60.00,Yes,temp_min=17,temp_max=21,humidity_min=35,humidity_max=45,light=minimal,"Collector's edition with detailed commentary."
+Crime and Punishment,Fyodor Dostoevsky,Psychological Fiction,978-0-14-305814-4,1866,4,19.99,No,,Classic novel exploring morality and guilt.
+Jane Eyre,Charlotte Bronte,Romance_Gothic,978-0-14-243720-9,1847,3,17.50,Yes,temp_min=16,temp_max=20,humidity_min=35,humidity_max=45,light=low,"Early edition in excellent condition."
+The Picture of Dorian Gray,Oscar Wilde,Philosophical Fiction,978-0-14-143957-0,1890,2,25.00,Yes,temp_min=17,temp_max=21,humidity_min=35,humidity_max=45,light=low,"Collector's edition with original cover art."
+Meditations,Marcus Aurelius,Philosophy,978-0-14-044933-4,180,1,35.00,Yes,temp_min=18,temp_max=22,humidity_min=35,humidity_max=45,light=minimal,"Ancient philosophy text, rare translation."
+The Brothers Karamazov,Fyodor Dostoevsky,Philosophical Fiction,978-0-14-044924-2,1880,3,21.99,No,,Classic exploration of morality and faith.
+Anna Karenina,Leo Tolstoy,Romance_Classic,978-0-14-303500-8,1877,2,24.99,Yes,temp_min=17,temp_max=21,humidity_min=35,humidity_max=45,light=low,"Collector's edition in pristine condition."

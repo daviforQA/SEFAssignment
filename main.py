@@ -2,6 +2,9 @@ from validation import get_valid_choice
 from books import add_book, edit_book, delete_book
 from search import search_books, view_all_books, view_rare_books
 from reports import full_inventory_report, rare_book_report, low_stock_report
+from utils import clear_screen, show_logo
+
+import csv
 
 MAIN_MENU = {
     "1": ("Book management", "book_menu"),
@@ -20,9 +23,26 @@ BOOK_MENU = {
 SEARCH_MENU = {
     "1": ("Search by field", search_books),
     "2": ("View all books", view_all_books),
-    "3": ("View rare books only", view_rare_books),
+    "3": ("View rare books", view_rare_books),
     "4": ("Return to main menu", None),
 }
+
+VIEW_BOOKS_MENU = {
+    1: ("View all books (unsorted)", view_all_books),
+    2: ("View books sorted by title", view_all_books),
+    3: ("View books sorted by author", view_all_books),
+    4: ("View books sorted by publication year", view_all_books),
+    5: ("Return to search menu", None),
+}
+
+VIEW_RARE_BOOKS_MENU = {
+    1: ("View rare books (unsorted)", view_rare_books),
+    2: ("View rare books sorted by title", view_rare_books),
+    3: ("View rare books sorted by author", view_rare_books),
+    4: ("View rare books sorted by publication year", view_rare_books),
+    5: ("Return to search menu", None),
+}
+
 
 REPORTS_MENU = {
     "1": ("Full inventory report", full_inventory_report),
@@ -30,9 +50,11 @@ REPORTS_MENU = {
     "3": ("Low stock report", low_stock_report),
     "4": ("Return to main menu", None),
 }
-
+    
 def run_menu(menu):
     while True:
+        clear_screen()
+
         for key, (label, _) in menu.items():
             print(f"{key}. {label}")   # Display menu options
 
@@ -45,10 +67,11 @@ def run_menu(menu):
             return action # Navigate to another menu
         else:
             action() # Execute the function associated with the choice
+            input("\nPress Enter to return to menu...")
 
 def main():
+    show_logo()
     current_menu = "main"
-
     while True: # Main loop to handle menu navigation
         if current_menu == "main":
             next_menu = run_menu(MAIN_MENU)
@@ -63,7 +86,6 @@ def main():
             next_menu = "main"
         elif current_menu == "exit":
             break
-
         current_menu = next_menu
 
 

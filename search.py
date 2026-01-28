@@ -1,3 +1,5 @@
+from storage import load_books
+
 def search_books(): 
     print("Searching books...")
     # Implementation for searching books goes here
@@ -9,3 +11,4 @@ def view_all_books():
 def view_rare_books():
     print("Viewing rare books...")
     # Implementation for viewing rare books goes here
+
