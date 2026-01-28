@@ -1,4 +1,5 @@
 from storage import load_books
+from books import display_books
 
 def search_books(): 
     print("Searching books...")
@@ -6,9 +7,11 @@ def search_books():
 
 def view_all_books():
     print("Viewing all books...")
-    # Implementation for viewing all books goes here
+    
 
-def view_rare_books():
+def view_rare_books(books):
     print("Viewing rare books...")
-    # Implementation for viewing rare books goes here
+    rare_books = [book for book in books if book.get("is_rare", "No") == "Yes"]
+    display_books(rare_books, view="detailed")
+
 

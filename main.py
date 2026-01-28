@@ -23,25 +23,25 @@ BOOK_MENU = {
 
 SEARCH_MENU = {
     "1": ("Search by field", search_books),
-    "2": ("View all books", view_all_books),
-    "3": ("View rare books", view_rare_books),
+    "2": ("Detailed Book View", view_all_books),
+    "3": ("Detailed Rare Book View", view_rare_books),
     "4": ("Return to main menu", None),
 }
 
 VIEW_BOOKS_MENU = {
-    1: ("View all books (unsorted)", view_all_books),
-    2: ("View books sorted by title", view_all_books),
-    3: ("View books sorted by author", view_all_books),
-    4: ("View books sorted by publication year", view_all_books),
-    5: ("Return to search menu", None),
+    "1": ("View all books (unsorted)", view_all_books),
+    "2": ("View books sorted by title", view_all_books),
+    "3": ("View books sorted by author", view_all_books),
+    "4": ("View books sorted by publication year", view_all_books),
+    "5": ("Return to search menu", None),
 }
 
 VIEW_RARE_BOOKS_MENU = {
-    1: ("View rare books (unsorted)", view_rare_books),
-    2: ("View rare books sorted by title", view_rare_books),
-    3: ("View rare books sorted by author", view_rare_books),
-    4: ("View rare books sorted by publication year", view_rare_books),
-    5: ("Return to search menu", None),
+    "1": ("View rare books (unsorted)", view_rare_books(books)),
+    "2": ("View rare books sorted by title", view_rare_books),
+    "3": ("View rare books sorted by author", view_rare_books),
+    "4": ("View rare books sorted by publication year", view_rare_books),
+    "5": ("Return to search menu", None),
 }
 
 
@@ -56,7 +56,7 @@ def run_menu(menu):
     while True:
         clear_screen()
         display_books(books) # Display current books in inventory (default view, includes title, author, isbn)
-        print("\n" + "="*50 + "\n") # Menu header separator
+        print("\n" + "="*35 + "\n") # Menu header separator
 
         for key, (label, _) in menu.items():
             print(f"{key}. {label}")   # Display menu options
@@ -84,6 +84,12 @@ def main():
         elif current_menu == "search_menu":
             run_menu(SEARCH_MENU)
             next_menu = "main"
+        elif current_menu == "view_books_menu":
+            run_menu(VIEW_BOOKS_MENU)
+            next_menu = "search_menu"
+        elif current_menu == "view_rare_books_menu":
+            run_menu(VIEW_RARE_BOOKS_MENU)
+            next_menu = "search_menu"
         elif current_menu == "reports_menu":
             run_menu(REPORTS_MENU)
             next_menu = "main"
