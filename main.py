@@ -1,10 +1,11 @@
 from validation import get_valid_choice
-from books import add_book, edit_book, delete_book
+from books import add_book, edit_book, delete_book, display_books
 from search import search_books, view_all_books, view_rare_books
 from reports import full_inventory_report, rare_book_report, low_stock_report
 from utils import clear_screen, show_logo
+from storage import load_books
 
-import csv
+books = load_books("books.csv")
 
 MAIN_MENU = {
     "1": ("Book management", "book_menu"),
@@ -54,6 +55,8 @@ REPORTS_MENU = {
 def run_menu(menu):
     while True:
         clear_screen()
+        display_books(books) # Display current books in inventory (default view, includes title, author, isbn)
+        print("\n" + "="*50 + "\n") # Menu header separator
 
         for key, (label, _) in menu.items():
             print(f"{key}. {label}")   # Display menu options
@@ -88,5 +91,5 @@ def main():
             break
         current_menu = next_menu
 
-
 main()
+

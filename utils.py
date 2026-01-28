@@ -2,7 +2,7 @@ def clear_screen():
     import os
     os.system('cls' if os.name == 'nt' else 'clear') # Clears the terminal screen.
 
-def show_logo(duration=4):
+def show_logo(duration=3):
     import time
     clear_screen()
     print("""
