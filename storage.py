@@ -11,5 +11,3 @@ def load_books(filename="books.csv"):
         return books
     except FileNotFoundError:
         return []
-
-        

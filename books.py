@@ -1,5 +1,6 @@
 from tabulate import tabulate
 from storage import load_books
+from utils import clear_screen
 
 def add_book():
     print("Adding a book...")
@@ -16,13 +17,13 @@ def delete_book():
     
     # Implementation for deleting a book goes here
 
-def display_books(books, view = "default", specific_fields = None):
+def display_books(books, view = "default", specific_fields = None, orientation = "horizontal"):
     if not books:
         print("No books to display.")
         return
 
-    DEFAULT_FIELDS = ["title", "author", "isbn"]
-    ALL_FIELDS = ["title", "author", "genre", "isbn", "publication_year", "quantity_in_stock", "unit_price", "is_rare", "env_conditions", "additional_info"]
+    DEFAULT_FIELDS = ["isbn", "title", "author"]
+    ALL_FIELDS = ["isbn", "title", "author", "genre", "publication", "stock", "unit_price", "is_rare", "additional_info"]
 
 
     if view == "default":
@@ -30,15 +31,15 @@ def display_books(books, view = "default", specific_fields = None):
     elif view == "detailed":
         fields_to_display = ALL_FIELDS
     elif view == "custom" and specific_fields:
-        fields_to_display = ["title"] + specific_fields
+        fields_to_display = ["isbn", "title"] + specific_fields
     else:
         fields_to_display = DEFAULT_FIELDS
+    
+    if orientation == "horizontal":
+        rows = []
+        for book in books:
+            row = [book.get(field, "") for field in fields_to_display]
+            rows.append(row)
+            headers = [field.replace("_", " ").title() for field in fields_to_display]
+        print(tabulate(rows, headers=headers, tablefmt="grid"))
 
-    rows = []
-    for book in books:
-        row = [book.get(field, "") for field in fields_to_display]
-        rows.append(row)
-        headers = [field.replace("_", " ").title() for field in fields_to_display]
-
-
-    print(tabulate(rows, headers=headers, tablefmt="grid"))
