@@ -1,14 +1,14 @@
-title,author,genre,isbn,publication,stock,unit_price,is_rare,additional_info
-To Kill a Mockingbird,Harper Lee,Fiction,978-0-06-112008-4,1960,12,15.99,No,Pulitzer Prize-winning novel.
-The Great Gatsby,F. Scott Fitzgerald,Classic_Fiction,978-0-7432-7356-5,1925,3,25.50,Yes,"First edition, leather-bound copy."
-1984,George Orwell,Dystopian,978-0-452-28423-4,1949,8,12.99,No,Classic dystopian novel about totalitarianism.
-Pride and Prejudice,Jane Austen,Romance_Classic,978-0-19-953556-9,1813,2,30.00,Yes,"Early 19th-century edition in excellent condition."
-Moby Dick,Herman Melville,Adventure_Classic,978-0-14-243724-7,1851,4,18.00,Yes,"Collector's edition with original illustrations."
-The Catcher in the Rye,J.D. Salinger,Fiction,978-0-316-76948-0,1951,10,14.99,No,Popular coming-of-age novel.
-War and Peace,Leo Tolstoy,Historical_Fiction,978-0-679-64037-9,1869,1,50.00,Yes,Rare hardcover edition.
-The Hobbit,J.R.R. Tolkien,Fantasy,978-0-618-00221-3,1937,6,22.99,No,Classic fantasy novel.
-Frankenstein,Mary Shelley,Horror_Science_Fiction,978-0-14-143947-1,1818,2,28.50,Yes,"Early edition with original introduction."
-Brave New World,Aldous Huxley,Dystopian,978-0-06-085052-4,1932,7,16.99,No,Classic dystopian work.
-Don Quixote,Miguel de Cervantes,Classic_Fiction,978-0-14-243723-0,1605,2,40.00,Yes,Antique edition.
-Harry Potter and the Philosopher's Stone,J.K. Rowling,Fantasy,978-0-7475-3269-9,1997,20,12.99,No,First book in the Harry Potter series.
+title,author,genre,isbn,publication,stock,unit_price,rarity,additional_info
+To Kill a Mockingbird,Harper Lee,Fiction,978-0-06-112008-4,1960,12,15.99,False,Pulitzer Prize-winning novel.
+The Great Gatsby,F. Scott Fitzgerald,Classic,978-0-7432-7356-5,1925,3,25.50,True,"First edition, leather-bound copy."
+1984,George Orwell,Dystopian,978-0-452-28423-4,1949,8,12.99,False,Classic dystopian novel about totalitarianism.
+Pride and Prejudice,Jane Austen,Romance,978-0-19-953556-9,1813,2,30.00,True,"Early 19th-century edition in excellent condition."
+Moby Dick,Herman Melville,Classic,978-0-14-243724-7,1851,4,18.00,True,"Collector's edition with original illustrations."
+The Catcher in the Rye,J.D. Salinger,Fiction,978-0-316-76948-0,1951,10,14.99,False,Popular coming-of-age novel.
+War and Peace,Leo Tolstoy,Fiction,978-0-679-64037-9,1869,1,50.00,True,Rare hardcover edition.
+The Hobbit,J.R.R. Tolkien,Fantasy,978-0-618-00221-3,1937,6,22.99,False,Classic fantasy novel.
+Frankenstein,Mary Shelley,Horror,978-0-14-143947-1,1818,2,28.50,True,"Early edition with original introduction."
+Brave New World,Aldous Huxley,Dystopian,978-0-06-085052-4,1932,7,16.99,False,Classic dystopian work.
+Don Quixote,Miguel de Cervantes,Classic,978-0-14-243723-0,1605,2,40.00,True,Antique edition.
+Harry Potter and the Philosopher's Stone,J.K. Rowling,Fantasy,978-0-7475-3269-9,1997,20,12.99,False,First book in the Harry Potter series.
 
